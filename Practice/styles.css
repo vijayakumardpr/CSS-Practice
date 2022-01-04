@@ -1,93 +1,96 @@
-* {
-  box-sizing: border-box;
+body {
+  margin: 0;
+  font-family: Arial;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #069;
+  color: white;
+  padding: 1.5rem;
+}
+
+.header-title {
+  text-align: center;
+  margin: 0;
+}
+
+.section {
+  padding: 1rem 2rem;
+
+  /* line-height: 1.5; */
+}
+
+.section-content {
+  padding-left: 1rem;
+  /* margin: 0; */
+}
+
+.section-accent {
+  background-color: #069;
+  color: white;
+}
+
+.skills-section {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+.skills-section,
+.project-section {
+  list-style: none;
+  margin: 0;
+}
+
+.project-list-item {
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.project-list-item:last-child {
+  margin: 0;
+}
+
+.contact-section {
+  margin: 2rem 0;
+}
+.input {
+  outline: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 0.3em;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.input:focus {
+  border: 1px solid #069;
+  box-shadow: 0 0 5px 0 #069;
+}
+
+.input-no-resize {
+  resize: none;
 }
 
 .btn {
-  background-color: hsl(0, 0%, 90%);
-  border: 1px solid hsl(0, 0%, 70%);
   outline: none;
   cursor: pointer;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   border-radius: 0.3em;
+  color: white;
+  background-color: hsl(200, 100%, 30%);
+  border: 1px solid hsl(200, 100%, 10%);
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: hsl(0, 0%, 80%);
-  box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
+  background-color: hsl(200, 100%, 20%);
+  box-shadow: 0 0 5px 0 hsl(200, 100%, 10%);
 }
-
-/* Primary hsl(271, 70%, 50%)*/
-
-.btn.btn-primary {
-  background-color: hsl(271, 70%, 50%);
-  border-color: hsl(271, 70%, 30%);
+.footer {
+  background-color: #069;
+  text-align: center;
   color: white;
-}
-
-.btn.btn-primary:hover,
-.btn.btn-primary:focus {
-  background-color: hsl(271, 70%, 40%);
-  box-shadow: 0 0 5px 0 hsl(271, 70%, 30%);
-}
-
-/* Accent hsl(200, 100%, 40%)*/
-
-.btn.btn-accent {
-  background-color: hsl(200, 100%, 40%);
-  border-color: hsl(200, 100%, 20%);
-  color: white;
-}
-
-.btn.btn-accent:hover,
-.btn.btn-accent:focus {
-  background-color: hsl(200, 100%, 30%);
-  box-shadow: 0 0 5px 0 hsl(200, 100%, 20%);
-}
-/* Danger hsl(0, 60%, 50%)*/
-
-.btn.btn-danger {
-  background-color: hsl(0, 60%, 50%);
-  border: 1px solid hsl(0, 60%, 30%);
-  color: white;
-}
-
-.btn.btn-danger:hover,
-.btn.btn-danger:focus {
-  background-color: hsl(0, 60%, 40%);
-  box-shadow: 0 0 5px 0 hsl(0, 60%, 30%);
-}
-
-.btn.btn-large {
+  padding: 1.5rem;
   font-size: 1.25rem;
-}
-
-.btn.btn-small {
-  font-size: 0.75rem;
-}
-
-.btn.btn-pill {
-  border-radius: 10000px;
-}
-
-.btn.btn-custom {
-  background: linear-gradient(
-    to right,
-    hsl(271, 70%, 50%),
-    hsl(200, 100%, 40%)
-  );
-  color: white;
-  border: 1px solid #222;
-}
-
-.btn.btn-custom:hover,
-.btn.btn-custom:focus {
-  background: linear-gradient(
-    to right,
-    hsl(271, 70%, 40%),
-    hsl(200, 100%, 30%)
-  );
-
-  border: 1px solid black;
-  box-shadow: 0 0 5px 0 black;
 }
